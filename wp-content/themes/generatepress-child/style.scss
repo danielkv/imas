@@ -1,0 +1,109 @@
+/*  
+Theme Name: IMAS (child)
+Theme URI: http://www.imas.net.br/
+Description: Desenvolvido exclusivamente para o site IMAS
+Version: 2018
+Author: Iocus
+Template: generatepress
+Author URI: http://www.iocus.com.br/
+Text Domain: generatepress-child
+*/
+
+body {
+	background:#fff;
+	&.elementor-page {
+		.site-content {
+			padding:0;
+		}
+		.entry-content, .entry-summary, .page-content {
+			margin:0;
+		}
+		.entry-header {
+			margin:2em 0;
+		}
+	}
+
+	.entry-header {
+		.entry-title {
+			border-bottom:3px solid #0b578c;
+			display:inline-block;
+			padding:0 120px 15px 0;
+		}
+	}
+}
+
+.site-header {
+	background:#0b578c;
+	.inside-header {
+		position:relative;
+		padding:30px 40px;
+	}
+	.site-logo img {
+		max-height:70px;
+	}
+	.main-navigation {
+		@media (min-width:769px) {
+			position: absolute;
+			bottom: 0;
+			right: 40px;
+		}
+		background:none;
+		.main-nav ul li > a {
+			border-bottom:3px solid transparent;
+		}
+		.main-nav ul li[class*="current-menu-"] > a {
+			background:none;
+			border-bottom:3px solid #fff;
+		}
+
+		.main-nav ul li:hover > a, .main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a {
+			background:none;
+			border-bottom:3px solid #5b9dd9;
+		}
+	}
+}
+
+.site-footer {
+	#footer-widgets {
+		padding:0;
+	}
+}
+
+.narrow-content {
+	padding-left:23%;
+	padding-right:23%;
+}
+
+/*ARCHIVES and SINGLE*/
+
+body.blog, body.single {
+	.site-content {
+		@extend .narrow-content;
+	}
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+textarea {
+	&[class*='form-control'] {
+		width:100%;
+		border-color:#eee;
+		background-color:#f6f6f6;
+		border-radius:2px;
+	}
+}
+
+button,
+input[type=submit] {
+	&[class*='form-control'] {
+		background-color:#0c4768;
+		border-radius:2px;
+		text-transform:uppercase;
+		font-size:14px;
+		&:hover {
+			background-color:#3c8ab5;
+		}
+	}
+}

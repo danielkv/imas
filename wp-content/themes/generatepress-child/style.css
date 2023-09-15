@@ -1,0 +1,36 @@
+/*  
+Theme Name: IMAS (child)
+Theme URI: http://www.imas.net.br/
+Description: Desenvolvido exclusivamente para o site IMAS
+Version: 2018
+Author: Iocus
+Template: generatepress
+Author URI: http://www.iocus.com.br/
+Text Domain: generatepress-child
+*/
+body { background: #fff; }
+body.elementor-page .site-content { padding: 0; }
+body.elementor-page .entry-content, body.elementor-page .entry-summary, body.elementor-page .page-content { margin: 0; }
+body.elementor-page .entry-header { margin: 2em 0; }
+body .entry-header .entry-title { border-bottom: 3px solid #0b578c; display: inline-block; padding: 0 120px 15px 0; }
+
+.site-header { background: #0b578c; }
+.site-header .inside-header { position: relative; padding: 30px 40px; }
+.site-header .site-logo img { max-height: 70px; }
+.site-header .main-navigation { background: none; }
+@media (min-width: 769px) { .site-header .main-navigation { position: absolute; bottom: 0; right: 40px; } }
+.site-header .main-navigation .main-nav ul li > a { border-bottom: 3px solid transparent; }
+.site-header .main-navigation .main-nav ul li[class*="current-menu-"] > a { background: none; border-bottom: 3px solid #fff; }
+.site-header .main-navigation .main-nav ul li:hover > a, .site-header .main-navigation .main-navigation .main-nav ul li:focus > a, .site-header .main-navigation .main-navigation .main-nav ul li.sfHover > a { background: none; border-bottom: 3px solid #5b9dd9; }
+
+.site-footer #footer-widgets { padding: 0; }
+
+.narrow-content, body.blog .site-content, body.single .site-content { padding-left: 23%; padding-right: 23%; }
+
+/*ARCHIVES and SINGLE*/
+input[type=text][class*='form-control'], input[type=email][class*='form-control'], input[type=tel][class*='form-control'], input[type=number][class*='form-control'], textarea[class*='form-control'] { width: 100%; border-color: #eee; background-color: #f6f6f6; border-radius: 2px; }
+
+button[class*='form-control'], input[type=submit][class*='form-control'] { background-color: #0c4768; border-radius: 2px; text-transform: uppercase; font-size: 14px; }
+button[class*='form-control']:hover, input[type=submit][class*='form-control']:hover { background-color: #3c8ab5; }
+
+/*# sourceMappingURL=style.css.map */
